@@ -5,10 +5,13 @@
   box-sizing: border-box;
 }
 
+
 body {
-  font-family: 'Arial', sans-serif;
+ font-family: "Kite One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background: linear-gradient(#222, #e3bdbd, #7b0768);
-  color: #000;
+  color: color: #f5f5f5;
 }
 
 header {
@@ -86,6 +89,12 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+button, .botao-sugestao {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
 
 button {
   padding: 10px;
