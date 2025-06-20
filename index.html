@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo | Coleções</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="img/p.png" class="logo" alt="Logo">
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Coleções</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="projetos">
+    <h2>Coleções</h2>
+    <div class="projetos1">
+      <img src="img/64c33649223ea1b95370092e2b99999f-nnaj7y8okd.jpg" alt="Kashmir" 
+      onclick="openModal('Kashmir - LOU DE PRE', 'Descrição: Notas olfativas típicas: Notas de topo: bergamota, pêssego, cardamomo, Notas de coração: rosa, jasmim, canela. Notas de base: sândalo, âmbar, baunilha, almíscar, patchouli.')">
+      
+      <img src="img/_8411061083482_0065198170_1.png" alt="Perfume 2" 
+      onclick="openModal('Carolina Herrera - 212 VIP ROSÉ', 'Descrição:Família olfativa: Floral Frutado Amadeirado Estilo: Elegante, feminino e moderno. Notas da fragrância: Notas de topo: Champagne rosé, notas frutadas, Notas de coração: Flor de pêssego, Notas de fundo: Almíscar branco, notas amadeiradas e âmbar.')">
+
+      <img src="img/Aura_Mugler_-1024x1024.jpg" alt="Perfume 3" 
+      onclick="openModal('Aura - MUGLER', 'Descrição: Notas de Topo: Folha de ruibarbo: crocante e levemente ácido. Nota exclusiva inspirada na medicina tradicional chinesa, que combina frescor verde com nuances adocicadas de amêndoa caramelizada e animal. Flor de laranjeira: luminosidade floral que contrasta com o verde intenso. Fundo “Animal”: Bourbon vanilla e wolfwood: aquecem a pele com sensualidade felina, resultando em suavidade amadeirada com um toque adocicado.')">
+    </div> 
+  </section>
+
+ <section id="contato">
+ 
+  <button class="botao-sugestao" onclick="toggleForm()">Contato </button>
+
+  <div id="formContainer" style="display: none;">
+    <form id="formContato">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagem"></p>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
