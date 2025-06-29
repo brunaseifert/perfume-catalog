@@ -10,7 +10,7 @@ body {
  font-family: "Kite One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: linear-gradient(#222, #e3bdbd, #7b0768);
+  background: linear-gradient(#601945, #e3bdbd, #7b0768);
   color: color: #f5f5f5;
 }
 
@@ -191,4 +191,3 @@ footer {
   background-color: #6b115a;
   color: #e3bdbd;
 }
-
